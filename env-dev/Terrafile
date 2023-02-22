@@ -2,6 +2,6 @@ mongodb:
     source:  "https://github.com/b52-clouddevops/tf-module-mongodb.git"
     version: "main"        
 
-mongodb:
-    source:  "https://github.com/b52-clouddevops/tf-module-mongodb.git"
+redis:
+    source:  "https://github.com/b52-clouddevops/tf-module-redis.git"
     version: "main"       
