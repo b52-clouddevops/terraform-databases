@@ -3,7 +3,8 @@ module "mongodb" {
   ENV                  = var.ENV
   DOCDB_PORT           = var.DOCDB_PORT
   DOCDB_INSTANCE_CLASS = var.DOCDB_INSTANCE_CLASS
-  
+  DOCDB_INSTANCE_COUNT = var.DOCDB_INSTANCE_COUNT
+
 }
 
 module "redis" {
@@ -20,11 +21,6 @@ module "mysql" {
   RDS_INSTANCE_TYPE    = var.RDS_INSTANCE_TYPE
 
 }
-
-
-variable "DOCDB_PORT" {}
-variable "DOCDB_INSTANCE_CLASS" {}
-variable "DOCDB_INSTANCE_COUNT" {}
 
 output "redis" {
     value = module.redis.redis
