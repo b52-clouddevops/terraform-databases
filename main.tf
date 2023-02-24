@@ -14,7 +14,8 @@ module "mysql" {
   RDS_MYSQL_PORT       = var.RDS_MYSQL_PORT
   RDS_MYSQL_STORAGE    = var.RDS_MYSQL_STORAGE
   RDS_MYSQL_ENGINE_VERSION = var.RDS_MYSQL_ENGINE_VERSION
-  
+  RDS_INSTANCE_TYPE    = var.RDS_INSTANCE_TYPE
+
 
 
 }
@@ -22,9 +23,3 @@ module "mysql" {
 output "redis" {
     value = module.redis.redis
 }
-
-
-variable "RDS_MYSQL_PORT" {}
-variable "RDS_MYSQL_STORAGE" {}
-variable "RDS_MYSQL_ENGINE_VERSION" {}
-variable "RDS_INSTANCE_TYPE" {}
