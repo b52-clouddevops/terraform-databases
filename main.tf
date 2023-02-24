@@ -16,9 +16,12 @@ module "mysql" {
   RDS_MYSQL_ENGINE_VERSION = var.RDS_MYSQL_ENGINE_VERSION
   RDS_INSTANCE_TYPE    = var.RDS_INSTANCE_TYPE
 
-
-
 }
+
+
+variable "DOCDB_PORT" {}
+variable "DOCDB_INSTANCE_CLASS" {}
+variable "DOCDB_INSTANCE_COUNT" {}
 
 output "redis" {
     value = module.redis.redis
