@@ -3,4 +3,4 @@ ENV                     = "dev"
 
 # MySQL Variable Values 
 
-RDS
+RDS_MYSQL_PORT = 3304
