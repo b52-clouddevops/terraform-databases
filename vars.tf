@@ -7,6 +7,6 @@ variable "RDS_MYSQL_ENGINE_VERSION" {}
 variable "RDS_INSTANCE_TYPE" {}
 
 # DocDB 
-varibale "DOCDB_PORT" {}
-variable "DOCDB_INSTACE_CLASS" {}
-variable "DOCDB_INSTACE_COUNT" {}
+variale "DOCDB_PORT" {}
+variable "DOCDB_INSTANCE_CLASS" {}
+variable "DOCDB_INSTANCE_COUNT" {}
