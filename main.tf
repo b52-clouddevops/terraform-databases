@@ -8,8 +8,13 @@ module "mongodb" {
 }
 
 module "redis" {
-  source               = "./vendor/modules/redis"     # Terrafile is going to download the code from the respective branch of the repo and keeps it local
-  ENV                  = var.ENV
+  source                  = "./vendor/modules/redis"     # Terrafile is going to download the code from the respective branch of the repo and keeps it local
+  ENV                     = var.ENV
+  REDIS_PORT              = var.REDIS_PORT
+  REDIS_INSTANCE_NODETYPE = var.REDIS_INSTANCE_NODETYPE
+  REDIS_INSTANCE_COUNT    = var.REDIS_INSTANCE_COUNT
+  REDIS_ENGINE_VERSION    = var.REDIS_ENGINE_VERSION
+
 }
 
 module "mysql" {

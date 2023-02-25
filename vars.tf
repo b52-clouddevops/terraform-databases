@@ -10,3 +10,16 @@ variable "RDS_INSTANCE_TYPE" {}
 variable "DOCDB_PORT" {}
 variable "DOCDB_INSTANCE_CLASS" {}
 variable "DOCDB_INSTANCE_COUNT" {}
+
+# Elastic Cache
+variable "REDIS_PORT" {}
+variable "REDIS_INSTANCE_NODETYPE" {}
+variable "REDIS_INSTANCE_COUNT" {}
+variable "REDIS_ENGINE_VERSION"
+
+
+ node_type            = "cache.t3.micro"
+
+ 6.x
+
+ 6379
