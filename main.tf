@@ -33,5 +33,5 @@ output "redis" {
 }
 
 output "secret-data" {
-  value = module.mongodb.secret-data
+  value = module.mongodb.data
 }
