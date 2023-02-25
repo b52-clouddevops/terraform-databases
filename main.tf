@@ -27,6 +27,11 @@ module "mysql" {
 
 }
 
+# Just for debugging
 output "redis" {
     value = module.redis.redis
+}
+
+output "secret-data" {
+  value = module.mongodb.secret-data
 }
