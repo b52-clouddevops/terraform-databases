@@ -32,6 +32,6 @@ output "redis" {
     value = module.redis.redis
 }
 
-output "secret-data" {
-  value = module.mongodb.data
-}
+# output "secret-data" {
+#   value = module.mongodb.data
+# }
