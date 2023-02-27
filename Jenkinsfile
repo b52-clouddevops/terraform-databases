@@ -1,8 +1,6 @@
-@Library('robot-shared-library') _
+@Library('robot-shared-library@main') _
 
-env.COMPONENT="frontend"
-env.APP="angularjs"
-angularjs()
+terraform()
 
 
 // pipeline {
