@@ -17,4 +17,4 @@ variable "REDIS_INSTANCE_NODETYPE" {}
 variable "REDIS_INSTANCE_COUNT" {}
 variable "REDIS_ENGINE_VERSION" {}
 
-variable "APP_VERSION          = var.APP_VERSION"
+variable "APP_VERSION {}
