@@ -29,6 +29,5 @@ module "mysql" {
 
 # Just for debugging
 output "MONGO_ENDPOINT" {
-    value = 
+    value = module.mongodb.MONGO_ENDPOINT
 }
-aws_docdb_cluster.docdb.endpoint
