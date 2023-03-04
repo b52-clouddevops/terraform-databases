@@ -28,10 +28,7 @@ module "mysql" {
 }
 
 # Just for debugging
-output "redis" {
-    value = module.redis.redis
+output "MONGO_ENDPOINT" {
+    value = 
 }
-
-# output "secret-data" {
-#   value = module.mongodb.data
-# }
+aws_docdb_cluster.docdb.endpoint
