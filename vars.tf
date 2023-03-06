@@ -19,6 +19,4 @@ variable "REDIS_ENGINE_VERSION" {}
 
 # RabbitMQ
 
-variable "RABBITMQ_PORT{
-  
-}
+variable "RABBITMQ_PORT" {}
