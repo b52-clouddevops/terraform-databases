@@ -24,6 +24,15 @@ module "mysql" {
   RDS_MYSQL_STORAGE    = var.RDS_MYSQL_STORAGE
   RDS_MYSQL_ENGINE_VERSION = var.RDS_MYSQL_ENGINE_VERSION
   RDS_INSTANCE_TYPE    = var.RDS_INSTANCE_TYPE
+}
+
+
+module "mongodb" {
+  source               = "./vendor/modules/mongodb"     # Terrafile is going to download the code from the respective branch of the repo and keeps it local
+  ENV                  = var.ENV
+  DOCDB_PORT           = var.DOCDB_PORT
+  DOCDB_INSTANCE_CLASS = var.DOCDB_INSTANCE_CLASS
+  DOCDB_INSTANCE_COUNT = var.DOCDB_INSTANCE_COUNT
 
 }
 
